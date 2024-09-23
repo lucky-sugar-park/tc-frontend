@@ -1,0 +1,255 @@
+[
+    {
+        "name": "사용자",
+        "type": "ListItem",
+        "icon": "PeopleIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "사용자목록",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/user/list",
+                "icon": "PersonSearchIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "사용자등록요청",
+                "link": "/user/register/request",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "PersonAddAlt1Icon" 
+            },
+            {
+                "type": "ListItem",
+                "name": "사용자등록승인",
+                "link": "/user/register/approval",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "ManageAccountsIcon" 
+            }
+        ]
+    },
+    {
+        "name": "인증 및 권한",
+        "type": "ListItem",
+        "icon": "TableViewIcon",
+        "items": [
+
+        ]
+    },
+    {
+        "type": "Divider",
+        "name": ""
+    },
+    {
+        "name": "정보관리",
+        "type": "ListItem",
+        "icon": "DatasetIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "PLC Connector",
+                "link": "/plc-connector/list",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "SettingsInputCompositeIcon" 
+            },
+            {
+                "type": "ListItem",
+                "name": "WebHook",
+                "link": "/webhook/list",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "WebhookIcon" 
+            },
+            {
+                "type": "ListItem",
+                "name": "인터페이스",
+                "icon": "CableIcon",
+                "items": [
+                    {
+                        "type": "ListItem",
+                        "name": "인터페이스 관리",
+                        "link": "/interface/list",
+                        "icon": "ErrorIcon",
+                        "state": { "viewId": "bodyMainView" }
+                    },
+                    {
+                        "type": "ListItem",
+                        "name": "인터페이스 테스트",
+                        "link": "/interface/test",
+                        "icon": "ErrorIcon",
+                        "state": { "viewId": "bodyMainView" }
+                    }
+                ] 
+            }
+        ]
+    },
+    {
+        "name": "Schedule Job",
+        "type": "ListItem",
+        "icon": "WorkHistoryIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "Job List",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "AssignmentIcon",
+                "link": "/scheduleJob/list"
+            }
+        ]
+    },
+    {
+        "name": "Interface Message",
+        "type": "ListItem",
+        "icon": "InboxIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "이력관리",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "ManageHistoryIcon",
+                "link": "/audit-message/list"
+            },
+            {
+                "type": "ListItem",
+                "name": "메시지 모니터링",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "HistoryIcon",
+                "link": "/audit-message/monitor"
+            },
+            {
+                "type": "ListItem",
+                "name": "메시지 분석",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "AnalyticsIcon",
+                "link": "/audit-message/analytics"
+            }
+        ]
+
+    },
+    {
+        "name": "대시보드",
+        "type": "ListItem",
+        "icon": "DashboardIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "Default",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/dashboard",
+                "icon": "MultilineChartIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "Analytics",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/dashboard/analytics",
+                "icon": "AnalyticsIcon"
+            }
+        ] 
+    },
+    {
+        "name": "Monitoring",
+        "type": "ListItem",
+        "icon": "MonitorWaveformIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "실시간 모니터링",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/monitoring",
+                "icon": "SpeedIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "PLC Connector 모니터링",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/plc-connector-monitoring",
+                "icon": "TuneIcon"
+            }
+        ]
+
+    },
+    {
+        "type": "Divider",
+        "name": ""
+    },
+    {
+        "name": "Virtual PLC 관리",
+        "type": "ListItem",
+        "icon": "MemoryIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "VPLC 목록",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/vplc/list",
+                "icon": "ListIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "VPLC 모니터링",
+                "state": { "viewId": "bodyMainView" },
+                "icon": "AnalyticsIcon",
+                "link": "/vplc/monitor"
+            }
+        ] 
+    },
+    {
+        "type": "Divider",
+        "name": ""
+    },
+    {
+        "name": "사용환경",
+        "type": "ListItem",
+        "icon": "SettingsAccessibilityIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "Settings",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/env/settings",
+                "icon": "SettingsApplicationsIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "Bookmark 관리",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/env/bookmarks",
+                "icon": "BookmarkIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "Layout 관리",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/env/layouts",
+                "icon": "WindowIcon"
+            }
+        ] 
+    },
+    {
+        "name": "Help Center",
+        "type": "ListItem",
+        "icon": "HelpCenterIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "도움말",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/help/docs",
+                "icon": "ArticleIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "QnA",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/help/qna",
+                "icon": "QuestionAnswerIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "User Manual",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/help/manual",
+                "icon": "MenuBookIcon"
+            }
+        ] 
+    }
+]

@@ -1,0 +1,359 @@
+[
+    {
+        "name": "사용자",
+        "type": "ListItem",
+        "Icon": "PeopleIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "사용자목록",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/user/list",
+                "Icon": "PersonSearchIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "사용자등록요청",
+                "link": "/user/addition",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "PersonAddAlt1Icon" 
+            },
+            {
+                "type": "ListItem",
+                "name": "사용자등록승인",
+                "link": "/user/addition",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "PersonAddAlt1Icon" 
+            }
+
+        ]
+    },
+    {
+        "name": "인증 및 권한",
+        "type": "ListItem",
+        "Icon": "PeopleIcon"
+    },
+    {
+        "type": "Divider",
+        "name": ""
+    },
+    {
+        "name": "PLC 관리",
+        "type": "ListItem",
+        "Icon": "TextSnippetIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "PLC 목록",
+                "link": "/plc/list",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "ListAltIcon" 
+            },
+            {
+                "type": "ListItem",
+                "name": "게시글등록",
+                "link": "/board/addition",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "PostAddIcon" 
+            }
+        ]
+    },
+    
+    {
+        "name": "WebHook 관리",
+        "type": "ListItem",
+        "Icon": "DataObjectIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "코드관리",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon", 
+                "items": [
+                    {
+                        "type": "ListItem",
+                        "name": "공통코드",
+                        "link": "/",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "Counter" }
+                       },
+                    {
+                        "type": "ListItem",
+                        "name": "다국어",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "TEST-21" }
+                    }
+                ]
+            },
+            {
+                "type": "ListItem",
+                "name": "WebHook 목록",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon",
+                "link": "/webhook/list"
+            },
+            {
+                "type": "Divider",
+                "name": ""
+            },
+            {
+                "type": "ListItem",
+                "name": "BOM관리",
+                "link": "/bom/list",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon" 
+            },
+            {
+                "type": "ListItem",
+                "name": "설비관리",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon" 
+            },
+            {
+                "type": "ListItem",
+                "name": "라벨관리",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon" 
+            }
+        ]
+    },
+    {
+        "name": "자재관리",
+        "type": "ListItem",
+        "Icon": "LayersIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "자재입출고",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon", 
+                "items": [
+                    {
+                        "type": "ListItem",
+                        "name": "입고",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "Counter" }
+                       },
+                    {
+                        "type": "ListItem",
+                        "name": "불출",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "TEST-21" }
+                    },
+                    {
+                        "type": "ListItem",
+                        "name": "반납",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "TEST-21" }
+                    }
+                ]
+            },
+            {
+                "type": "ListItem",
+                "name": "위치현황",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "MyLocationIcon", 
+                "items": [
+                    {
+                        "type": "ListItem",
+                        "name": "자재위치",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "Counter" }
+                    },
+                    {
+                        "type": "ListItem",
+                        "name": "자재위치",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "TEST-21" }
+                    }
+                ]
+            },
+            {
+                "type": "ListItem",
+                "name": "불량관리",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            }
+        ]
+    },
+    {
+        "name": "Schedule Job 관리",
+        "type": "ListItem",
+        "Icon": "PrecisionManufacturingIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "Schedule Job 목록",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon",
+                "link": "/scheduleJob/list"
+            },
+            {
+                "type": "ListItem",
+                "name": "Schedule Job 조회",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon", 
+                "link": "/scheduleJob/find"
+            }
+        ]
+    },
+    {
+        "name": "생산관리",
+        "type": "ListItem",
+        "icon": "ConveyorIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "생산계획",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon", 
+                "items": [
+                    {
+                        "type": "ListItem",
+                        "name": "작업지시",
+                        "link": "/workOrder",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "Counter" }
+                    },
+                    {
+                        "type": "ListItem",
+                        "name": "생산실적",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "TEST-21" }
+                    }
+                ]
+            },
+            {
+                "type": "ListItem",
+                "name": "생산관리",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon", 
+                "items": [
+                    {
+                        "type": "ListItem",
+                        "name": "생산현황",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "Counter" }
+                       },
+                    {
+                        "type": "ListItem",
+                        "name": "부라부라",
+                        "state": { "leftMenuKey": "examplesLeftMenu", "fromTemplate": true, "selectedName": "TEST-21" }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "물류관리",
+        "type": "ListItem",
+        "Icon": "ForkLiftIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "대차입고",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "대차출고",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "출하관리",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            }
+        ]
+    },
+    {
+        "type": "Divider",
+        "name": ""
+    },
+    {
+        "name": "인터페이스 관리",
+        "type": "ListItem",
+        "Icon": "FactCheckIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "인터페이스 목록",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon",
+                "link": "/interface/list" 
+            }
+        ]
+    },
+    {
+        "name": "대시보드",
+        "type": "ListItem",
+        "Icon": "DashboardIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "종합현황",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "생산현황",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "출하현황",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "창고현황",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon" 
+            }
+        ] 
+    },
+    {
+        "name": "모니터링",
+        "type": "ListItem",
+        "Icon": "MonitorWaveformIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "실시간 모니터링",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/monitoring",
+                "Icon": "AssignmentIcon"
+            },
+            {
+                "type": "ListItem",
+                "name": "PLC 모니터링",
+                "state": { "viewId": "bodyMainView" },
+                "link": "/plc_monitoring",
+                "Icon": "AssignmentIcon"
+            }
+        ]
+    },
+    {
+        "name": "메시지이력",
+        "type": "ListItem",
+        "Icon": "InsertChartIcon",
+        "items": [
+            {
+                "type": "ListItem",
+                "name": "메시지 이력관리",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon",
+                "link": "/audit-message/list"
+            },
+            {
+                "type": "ListItem",
+                "name": "메시지 모니터링",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon",
+                "link": "/audit-message/monitor"
+            },
+            {
+                "type": "ListItem",
+                "name": "메시지 분석",
+                "state": { "viewId": "bodyMainView" },
+                "Icon": "AssignmentIcon"
+            }
+        ]
+    }
+]
