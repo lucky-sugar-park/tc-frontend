@@ -68,11 +68,11 @@ const VplcMonitorFloatControlToolbar = (props) => {
     }
 
     const handleOnResume = () => {
-        onControlCommand(vplcId, "PAUSE");
+        onControlCommand(vplcId, "RESUME");
     }
 
     const handleOnPause = () => {
-        onControlCommand(vplcId, "RESUME");
+        onControlCommand(vplcId, "PAUSE");
     }
 
     return(
