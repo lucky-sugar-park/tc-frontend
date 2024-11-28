@@ -57,8 +57,8 @@ export default function Footer (props) {
             <InnerBox>
                 <Copyright
                     style={{ padding: 2 }}
-                    companyName="Samsung SDS"
-                    companyWebSite="http://www.sds.samsung.com"
+                    companyName="WowSoftLab"
+                    companyWebSite="http://wowsoftlab.com"
                     personSecurityText="개인정보처리방침"
                     onPersonSecurityPolicyShow={ handlePersonSecurityPolicyShow }
                 />
